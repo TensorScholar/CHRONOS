@@ -1,0 +1,27 @@
+[workspace]
+members = [
+    "core",
+    "visualization",
+    "accessibility",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Mohammad Atashi <mohammadaliatashi@icloud.com>"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/TensorScholar/chronos.git"
+description = "CHRONOS: Temporal Algorithmic Observatory - A hybrid Rust/Python framework for algorithm visualization, education, and temporal debugging"
+readme = "README.md"
+homepage = "https://github.com/TensorScholar/chronos.git"
+keywords = ["algorithm", "visualization", "temporal", "debugging", "education", "rust", "python"]
+categories = ["science::visualisation", "development-tools::debugging", "education"]
+
+[workspace.dependencies]
+log = "0.4.21"
+env_logger = "0.11.3"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.115"
+thiserror = "1.0.58"
+pyo3 = { version = "0.21.2", features = ["extension-module"] }
